@@ -10,7 +10,7 @@ pipeline {
     stage('scan and build stage') {
       steps {
         withCredentials([string(credentialsId: 'sonarqubetokenforpipeline', variable: 'SQTOKEN')]) {
-        bat 'sonar-scanner.bat -D"sonar.projectKey=nodejs-app" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=$SQTOKEN"'
+        bat 'sonar-scanner.bat -D"sonar.projectKey=nodejs-app" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqa_056b5d8ed5a2df7ad5be92dfeaa31ef122aa7a63"'
         bat 'npm install'
         }
       }
