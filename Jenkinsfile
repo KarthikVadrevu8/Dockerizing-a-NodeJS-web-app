@@ -37,6 +37,24 @@ pipeline {
     }
     stage('Deploy to Cluster') {
       steps {
+        script {
+                    if(env.BRANCH_NAME=='master') {
+                        def isContinue=input(
+                                message: "Continue deploy to Production Environment?",
+                                parameters: [
+                                 [$class: 'BooleanParameterDefinition', defaultValue: true, description: '', name: 'Checked means you acknowledge and approve with this deployment']    
+                                ])
+                        echo "isContinue=${isContinue}"
+                        if(isContinue) {
+                            echo "deploy continue"
+                        } else {
+                            currentBuild.result = 'FAILURE'
+                            echo "User untick and not agree on it."
+                        }
+                    } else { 
+                        echo "no need to approve"
+                    }
+                }
         bat "az account set -s 9342e2c2-c6de-4154-ad60-6053ed21752f"
         /*bat "winget install -e --id Kubernetes.kubectl"
         */
