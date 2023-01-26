@@ -38,7 +38,7 @@ pipeline {
     stage('Deploy to Cluster') {
       steps {
         script {
-                    if(env.BRANCH_NAME=='master') {
+                    if(env.BRANCH_NAME!='master') {
                         def isContinue=input(
                                 message: "Continue deploy to Production Environment?",
                                 parameters: [
