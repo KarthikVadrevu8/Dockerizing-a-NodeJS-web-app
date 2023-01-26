@@ -40,9 +40,9 @@ pipeline {
         script {
                     if(env.BRANCH_NAME!='master') {
                         def isContinue=input(
-                                message: "Continue deploy to Production Environment?",
+                                message: "Continue deploy to Cluster?",
                                 parameters: [
-                                 [$class: 'BooleanParameterDefinition', defaultValue: true, description: '', name: 'Checked means you acknowledge and approve with this deployment']    
+                                 [$class: 'BooleanParameterDefinition', defaultValue: true, description: '', name: 'Acknowledge and approve this deployment']    
                                 ])
                         echo "isContinue=${isContinue}"
                         if(isContinue) {
