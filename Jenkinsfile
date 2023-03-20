@@ -55,6 +55,7 @@ pipeline {
                         echo "no need to approve"
                     }
                 }
+        bat "az account list"
         bat "az account set -s 8011fb9e-c135-4ab2-af80-93b2e81c89be"
         /*bat "winget install -e --id Kubernetes.kubectl"
         */
