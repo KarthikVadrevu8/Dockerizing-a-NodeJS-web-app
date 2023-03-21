@@ -12,13 +12,15 @@ This project creates a simple **nodeJs** application and deploy it onto a kubern
 
 ### Tools used in the CI/CD process:
 
-- **GitHub** to store source code
-- **Jenkins** as DevOps tool to build and deploy the application
-- **Sonarqube** to scan the source code (Static code analysis)
-- **Docker/DockerHub** to build docker and store the docker images
-- **AKS** to deploy the application as containers running on Azure managed Kubernetes Setup
-- **node.JS** (JavaScript runtime) to build the application written in JavaScript
-- **Jest** to perform unit tests on JavaScript codebase
+| Name | Description |
+| - | - |
+| **GitHub** | to store source code |
+| **Jenkins** | as DevOps tool to build and deploy the application |
+| **Sonarqube** | to scan the source code (Static code analysis) |
+| **Docker/DockerHub** | to build docker and store the docker images |
+| **AKS** | to deploy the application as containers running on Azure managed Kubernetes Setup |
+| **node.JS** | (JavaScript runtime) to build the application written in JavaScript |
+| **Jest** | to perform unit tests on JavaScript codebase |
 
 ### Scope of Testing:
 
