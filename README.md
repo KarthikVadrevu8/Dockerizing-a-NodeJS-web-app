@@ -26,7 +26,9 @@ This project creates a simple **nodeJs** application and deploy it onto a kubern
 
 Unit tests are included as part of the build process. Jest is the test framework used to run unit tests on the source code (written in JavaScript). 
 
-
+```
+npm test
+```
 
 
 
