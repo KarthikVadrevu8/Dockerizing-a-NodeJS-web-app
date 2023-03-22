@@ -29,7 +29,8 @@ Unit tests are included as part of the build process. Jest is the test framework
 ```
 npm test
 ```
+Sample look of website:
 
+![Untitled](https://user-images.githubusercontent.com/117923769/226843171-56d36e6d-0181-463f-965c-c2add4c66efd.jpg)
 
-![image](https://user-images.githubusercontent.com/117923769/226842866-d2b300a0-19f8-489c-8dd0-a19d0140e2c5.png)
 
